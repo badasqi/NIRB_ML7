@@ -17,20 +17,6 @@ from sklearn.ensemble import BaggingClassifier
 from lightgbm import LGBMClassifier
 from sklearn.neighbors import KNeighborsClassifier
 
-'''csv_input = pd.read_csv(r'C:/Users/Ilya/PycharmProjects/NIRB_ML/newnew_fake_fragments_img.csv')
-csv_input['Class'] = float(1)
-csv_input.to_csv('new_train/newnewf.csv', index = False)
-csv_input1 = pd.read_csv(r'C:/Users/Ilya/PycharmProjects/NIRB_ML/newnew_original_fragments_img.csv')
-csv_input1['Class'] = 0
-csv_input1.to_csv('new_train/newnewor.csv', index = False)
-#combine all files in the list
-all_filenames = os.listdir(r'C:/Users/Ilya/PycharmProjects/NIRB_ML/new_train')
-combined_csv = pd.concat([pd.read_csv(f) for f in all_filenames])
-#export to csv
-combined_csv.to_csv('new_train/train_haralick.csv', index=False)
-df = pd.concat(
-    map(pd.read_csv, ['or.csv', 'f.csv']), ignore_index=True)
-print(df)'''
 
 fragments = pd.read_csv('new_train/train_train_haralick.csv', sep=',', header=0, low_memory=False)
 fragments.head()
