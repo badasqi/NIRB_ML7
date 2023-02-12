@@ -27,11 +27,8 @@ y = fragments['Class']
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.15, random_state=27)
 print('X_test',X_test)
 print('y_test',y_test)
-#print(x_t)'''
-#print(y_test)
 
 ##########################
-
 
 '''
 LGBM = LGBMClassifier(n_estimators=30000, objective="binary", class_weight=None)
